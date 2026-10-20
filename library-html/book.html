@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Moby-Dick — Ma bibliothèque</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="index.html">Accueil</a></li>
+        </ul>
+      </nav>
+      <hr />
+    </header>
+
+    <main>
+      <article>
+        <h1>Moby-Dick</h1>
+        <img src="moby-dick.png" alt="Couverture du roman Moby-Dick" width="200" />
+
+        <section>
+          <h2>Informations sur le livre</h2>
+          <dl>
+            <dt>Auteur</dt>
+            <dd>Herman Melville</dd>
+            <dt>Première publication</dt>
+            <dd><time datetime="1851">1851</time></dd>
+            <dt>Langue originale</dt>
+            <dd>Anglais</dd>
+            <dt>Genre</dt>
+            <dd>Roman d’aventure</dd>
+          </dl>
+        </section>
+
+        <section>
+          <h2>Présentation du roman</h2>
+          <details>
+            <summary>Lire le résumé de Moby-Dick</summary>
+            <p>Ismaël embarque à bord du Pequod, un navire baleinier commandé par le capitaine Achab. Il découvre la vie en mer et les membres de l’équipage.</p>
+            <p>Achab poursuit Moby Dick, un cachalot blanc. Sa quête devient une obsession qui entraîne tout l’équipage dans une aventure périlleuse.</p>
+          </details>
+        </section>
+
+        <section>
+          <h2>Commande de démonstration</h2>
+          <button type="button" command="show-modal" commandfor="command-dialog">Commander le livre</button>
+          <dialog id="command-dialog" aria-labelledby="dialog-title">
+            <h2 id="dialog-title">Commande enregistrée</h2>
+            <p>Merci pour votre intérêt pour Moby-Dick.</p>
+            <form method="dialog">
+              <button type="submit">Fermer</button>
+            </form>
+          </dialog>
+        </section>
+        <p><a href="index.html">Retour à la liste des livres</a></p>
+      </article>
+    </main>
+
+    <footer>
+      <hr />
+      <p>© 2026 Sup de Vinci — Bibliothèque pédagogique</p>
+    </footer>
+  </body>
+</html>

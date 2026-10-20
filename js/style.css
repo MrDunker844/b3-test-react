@@ -1,0 +1,109 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --background: #f4f7fb;
+    --surface: #ffffff;
+    --text: #1f2937;
+    --muted: #64748b;
+    --primary: #2563eb;
+    --primary-dark: #1d4ed8;
+    --border: #dbe3ef;
+    --danger: #b91c1c;
+    --shadow: 0 14px 35px rgb(15 23 42 / 10%);
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 48px 20px;
+    background: linear-gradient(135deg, #eef4ff, var(--background));
+    color: var(--text);
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+}
+
+h1 {
+    margin-bottom: 28px;
+    color: #172554;
+    font-size: clamp(2rem, 5vw, 3.5rem);
+    text-align: center;
+}
+
+button {
+    margin: 18px 0 24px;
+    padding: 12px 24px;
+    border: 0;
+    border-radius: 8px;
+    background: var(--primary);
+    color: #fff;
+    cursor: pointer;
+    font: inherit;
+    font-weight: 700;
+    transition: background 180ms ease, transform 180ms ease, box-shadow 180ms ease;
+}
+
+button:hover {
+    background: var(--primary-dark);
+    box-shadow: 0 8px 18px rgb(37 99 235 / 25%);
+    transform: translateY(-2px);
+}
+
+button:focus-visible {
+    outline: 3px solid #93c5fd;
+    outline-offset: 3px;
+}
+
+#loading {
+    min-height: 24px;
+    color: var(--muted);
+    font-style: italic;
+}
+
+#error {
+    min-height: 24px;
+    color: var(--danger);
+    font-weight: 700;
+}
+
+#book-list {
+    width: min(100%, 900px);
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 8px;
+    list-style: none;
+}
+
+#book-list li {
+    padding: 6px 12px;
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    background: var(--surface);
+    box-shadow: 0 2px 6px rgb(15 23 42 / 5%);
+    font-size: 0.95rem;
+    transition: border-color 180ms ease, transform 180ms ease;
+}
+
+#book-list li:hover {
+    border-color: #93c5fd;
+    transform: translateY(-2px);
+}
+
+@media (max-width: 480px) {
+    body {
+        padding: 32px 16px;
+    }
+
+    button {
+        width: 100%;
+    }
+
+    #book-list {
+        grid-template-columns: 1fr;
+    }
+}

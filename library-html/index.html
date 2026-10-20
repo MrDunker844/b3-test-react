@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ma bibliothèque</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="index.html" aria-current="page">Accueil</a></li>
+        </ul>
+      </nav>
+      <hr />
+    </header>
+
+    <main>
+      <h1>Bibliothèque de livres</h1>
+      <p>Bienvenue dans notre bibliothèque. Découvrez notre <strong>sélection de romans d’aventure</strong> et consultez la fiche d’un livre pour en savoir plus.</p>
+      <p>Cette sélection vous invite à explorer des récits d’aventure et des univers imaginaires. <em>Quel sera votre prochain voyage ?</em></p>
+
+      <section>
+        <h2>Les livres de la bibliothèque</h2>
+
+        <form action="index.html" method="get">
+          <p>
+            <label for="book-name">Rechercher un livre</label>
+            <input type="search" name="q" id="book-name" placeholder="Ex. : Moby-Dick" />
+            <button type="submit">Rechercher</button>
+          </p>
+        </form>
+
+        <ul>
+          <li><a href="book.html">Moby-Dick</a>, par Herman Melville</li>
+          <li><a href="book.html">Vingt mille lieues sous les mers</a>, par Jules Verne</li>
+          <li><a href="book.html">L’Île au trésor</a>, par Robert Louis Stevenson</li>
+        </ul>
+      </section>
+    </main>
+
+    <footer>
+      <hr />
+      <p>© 2026 Sup de Vinci — Bibliothèque pédagogique</p>
+    </footer>
+  </body>
+</html>
